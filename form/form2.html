@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form 태그 : 사용자로부터 입력을 받기 위한 양식을 작성하는 태그
+        - action : 전송한 정보를 처리할 경로
+        - method : 정보를 서버로 전송할 때 사용하는 방식 지정(get,host)
+        - autocomplete="off" (기본값 on) : 입력 폼에 값을 보이게 할 것이냐? (자동완성기능 사용여부)
+        제출 : http://169.254.129.62:5500/basic/form1.html?name=%EC%9D%B4%EB%A6%84&age=0 
+        URL ? 뒤에에 따라간다
+    -->
+        <!-- get방식 시작했던 것들을 실제 우리가 입력한 값은 키밸류 형태로 함께보낸다-->
+        <!-- get방식은 form안에 입력한 값이 주소줄에 그대로 보인다.-->
+        <!-- post 방식 : 입력한 값이 주소줄에 보이지 않는다.-->
+        <!-- 1) type="submit" : form안 요소들을 action에 적힌 곳으로 전송-->
+        <!-- 2) type="reset" : form 안 요소들을 초기화-->
+        <!-- 3) <label for=""> : 제목 텍스트 / for 속성에 input 태그에 부여한 id 속성값과 동일한 값을 사용하는 경우 제목 클릭시 input 속성에 포커스를 줄 수 있다. -->
+        <!-- 4) type="text" : 짧은 text 입력 시 사용-->
+        <!-- 5) type="number" : 숫자만 입력-->
+
+        <!-- fieldset : 그룹화하기
+             legend : 그룹화 제목 지정
+             disabled : 비활성화
+        -->
+
+     <form action="" method="get" autocomplete="off">
+        <fieldset>
+            <legend>반장</legend>
+            <div>
+                <label for="name1">이름</label>
+                <input type="text" name="name1" id="name1"> <!-- 자주 쓴다.-->
+            </div>
+            
+            <div>
+                <label for="age1">나이</label>
+                <input type="number" name="age1" id="age1">
+            </div>
+        
+        </fieldset>
+        <fieldset>
+            <legend>부반장</legend>
+            <div>
+                <label for="name2">이름</label>
+                <input type="text" name="name2" id="name2"> <!-- 자주 쓴다.-->
+                
+            </div>
+            <div>
+                <label for="age2">나이</label>
+                <input type="number" name="age2" id="age2" disabled>
+            </div>
+        </fieldset>
+        <fieldset disabled>
+            <legend>서기</legend>
+            <div>
+                <label for="name3">이름</label>
+                <input type="text" name="name3" id="name3"> <!-- 자주 쓴다.-->
+            </div>
+            <div>
+                <label for="age3">나이</label>
+                <input type="number" name="age3" id="age3">
+            </div>
+        </fieldset>
+        <button type="submit">제출</button> <!-- submit => action으로 보낸다 공백시 기존 주소에 보낸다.-->
+        <button type="reset">초기화</button>
+
+    
+
+     </form>
+
+</body>
+</html>

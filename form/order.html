@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>개인정보</legend>
+        <div>
+            <ul>
+                <li>
+                    <label for="">이름 </label> 
+                    <input type="text" id="name" placeholder="여백없이 입력" >
+                </li> 
+
+            </ul>
+            
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <label for="">연락처</label>
+                    <input type="text" id="number" placeholder="연락가능한 번호" >
+                </li> 
+
+            </ul>
+            
+        </div>
+    </form>
+    </fieldset>
+
+    <form action="" method="get">
+    <fieldset>
+            <legend>배송지 정보</legend>
+        <div>
+            <ul>
+                <li>
+                    <label for="">주소</label>
+                    <input type="text" id="name" size="40">
+                </li> 
+            </ul>   
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <label for="">전화번호</label> 
+                    <input type="text" id="number" size="30">
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <label for="">메모</label> 
+                    <textarea name="message" id="megssage" cols="40" rows="3" ></textarea>
+                </li>
+            </ul>
+        </div>
+    </form>
+    </fieldset>
+
+    <form action="" method="get">
+    <fieldset>
+            <legend>주문정보 </legend>
+        <div>
+            <ul>
+                <li><input type="checkbox" name="fruit" id="guate" >
+                    <label for="">과테말라 안티구아(100g) <input type="number" id="guate" min= "0" max="5" value="0">개
+                    </label>
+                </li> 
+            </ul>   
+        </div>
+        <div>
+            <ul>
+                <li><input type="checkbox" name="fruit" id="guate">
+                    <label for="">인도네시아 만델링(100g) <input type="number" id="innie" min= "0" max="5" value="0">개
+                    </label>
+                </li> 
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><input type="checkbox" name="fruit" id="guate">
+                    <label for="">탐라는도다(블렌딩)(100g) <input type="number" id="tamra" min= "0" max="5" value="0">개
+                    </label>
+                </li> 
+            </ul>
+        </div>
+    </form>
+    </fieldset>
+    <button type="submit">주문하기</button>
+    <button type="reset">다시 작성</button>
+    
+</body>
+</html>
